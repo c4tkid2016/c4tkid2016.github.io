@@ -1,0 +1,624 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+/*BANNER from C4TK */
+@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-o-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+/* ==========================================================================
+General
+========================================================================== */
+
+h1, h2, h3, h4, h5, h6, p, b, i, li, td, a {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container h1,
+.container h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .2em;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.button-black {
+  color: black;
+  border: 2px solid black;
+}
+
+.button-white {
+  color: white;
+  border: 2px solid white;
+}
+
+  .button:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+
+/* ==========================================================================
+Banner
+========================================================================== */
+
+#banner {
+  color: #7c8081;
+  font-family: sans-serif;
+  font-size: 15pt;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+
+  background-attachment: scroll, scroll, scroll, fixed;
+  background-color: #645862;
+  background-image: url("img/light-bl.svg"), url("img/light-br.svg"), url("img/overlay.png"), url("img/slide-bg.jpg");
+  background-position: bottom left, bottom right, top left, top center;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  background-size: 25em, 25em, auto, cover;
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+
+  #banner .inner {
+    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+    -o-animation: reveal-banner 1s 0.25s ease-in-out;
+    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+    animation: reveal-banner 1s 0.25s ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    background: rgba(52, 27, 43, 0.5);
+    color: white;
+    display: inline-block;
+    opacity: 0;
+    padding: 1em;
+    text-align: center;
+  }
+
+    #banner .inner header {
+      display: inline-block;
+      border-bottom: solid 2px;
+      border-top: solid 2px;
+      margin: 0 0 2em 0;
+      padding: 3px 0 3px 0;
+    }
+
+      #banner .inner header h2 {
+        border-bottom: solid 2px;
+        border-top: solid 2px;
+        font-size: 1.3em;
+        line-height: 1.75em;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+        margin: 0;
+        padding-left: 0.05em;
+        position: relative;
+        text-transform: uppercase;
+      }
+
+    #banner .inner p {
+      font-size: 0.9em;
+      letter-spacing: 0.1em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+      #banner .inner p a {
+        color: inherit;
+        font-weight: 400;
+        text-decoration: none;
+      }
+
+    #banner .inner footer {
+      margin: 2em 0 0 0;
+    }
+
+/* ==========================================================================
+About
+========================================================================== */
+
+.about {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 50px 0;
+}
+
+  .about h1 {
+    color: #464646;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+  }
+
+  .about h1 div {
+    display: inline-block;
+  }
+
+  .about p {
+    color: #7c8081;
+    padding-top: 30px;
+    max-width: 800px;
+    line-height: 1.5em;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+/* ==========================================================================
+What Is
+========================================================================== */
+
+.what-is {
+  background-color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+  .what-is h1 {
+    margin: 0 auto;
+  }
+
+  .what-is h1 div {
+    display: inline-block;
+  }
+
+  .what-is p {
+    padding-top: 30px;
+    line-height: 1.5em;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .what-is ul li {
+    font-size: 18px;
+    text-align: left;
+    padding-top: 5px;
+  }
+
+/* ==========================================================================
+Map & Schedule
+========================================================================== */
+
+.schedule {
+  background-color: #eaeaea;
+}
+  
+  .schedule h1,
+  .schedule h3 {
+    text-align: center;
+  }
+
+  .schedule h3 {
+    margin-bottom: 15px;
+  }
+
+  .schedule .maps {
+  background-color: #bbb;
+  height: 400px;
+}
+
+  .schedule .maps iframe {
+    pointer-events: none;
+  }
+
+th {
+  background-color: #555;
+  color: white;
+  padding-left: 20px !important;
+}
+
+td {
+  background-color: #fff;
+  padding-left: 20px !important;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================================
+Join
+========================================================================== */
+
+.join {
+  padding-bottom: 0;
+}
+
+/* ==========================================================================
+Awards
+========================================================================== */
+
+.awards {
+  background-color: #eaeaea;
+}
+
+  .awards h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .awards i {
+    text-align: center;
+    font-size: 7em;
+    display: block;
+    color: #D4AF37;
+  }
+
+  .awards p {
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    font-size: 1.5em;
+  }
+
+
+/* ==========================================================================
+Winners
+========================================================================== */
+
+.winners {
+  display: none; /* Hide this before launch */
+
+  background-color: #ddd;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ==========================================================================
+Sponsors
+========================================================================== */
+
+.sponsors {
+  display: none; /* Hide for now */
+  
+  width: 100%;
+  height: 120px;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center ;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+Challenges
+========================================================================== */
+
+.challenges {
+  display: none; /* Hide for now */
+
+  background-color: #fff;
+}
+
+.pitch {
+  padding: 20px;
+}
+
+.pitch strong {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.pitch h2 {
+  margin: 10px 0;
+}
+
+.pitch div div{ /* i should refactor this */
+  color: #888;
+}
+
+/* ==========================================================================
+Mentors & Judges
+========================================================================== */
+
+.mentor,
+.judge,
+.organizer {
+  display: flex;
+}
+
+.mentor .picture,
+.judge .picture,
+.organizer .picture {
+  display: inline-block;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
+.mentor .desc,
+.judge .desc,
+.organizer .desc {
+  background-color: #fff;
+  padding: 10px;
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.mentor .desc h3,
+.judge .desc h3,
+.organizer .desc h3 {
+  font-size: 1.5em;
+  line-height: 1.1em;
+}
+
+/* ==========================================================================
+Join As Sponsor
+========================================================================== */
+
+.join-sponsor {
+  background-color: #eaeaea;
+}
+
+  .join-sponsor h1 {
+    text-align: center;
+  }
+
+/* ==========================================================================
+API
+========================================================================== */
+
+.api {
+  display: none; /* Hide for now */
+
+  background-image: url('img/old_mathematics.gif');
+}
+
+.api h1 {
+  text-align: center;
+}
+
+.api .provider {
+  height: 260px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.provider .logo {
+  display: block;
+  line-height: 150px;
+  height: 150px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.provider img {
+  width: 100%;
+  margin: auto;
+}
+
+.provider .details {
+  color: #666;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+
+}
+
+.details {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ==========================================================================
+Others
+========================================================================== */
+
+.mentor,
+.judge,
+.organizer,
+.provider,
+.category {
+  /* cursor: pointer; */ /* No need for cursor */
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12)
+}
+
+.mentor .desc h3,
+.judge .desc h3,
+.organizer .desc h3,
+.details h3 {
+  color: #F84E30;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==========================================================================
+FAQ
+========================================================================== */
+
+.rules {
+  display: none; /* Hide for now */
+  background-color: #ddd;
+}
+
+/* ==========================================================================
+FAQ
+========================================================================== */
+
+.faq {
+  background: url("img/coder.jpg") no-repeat 50% 0 fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+.faq .row {
+   -moz-column-width: 30em;
+   -webkit-column-width: 30em;
+   -moz-column-gap: 1em;
+   -webkit-column-gap:1em; 
+}
+
+.item {
+  display: inline-block;
+  padding:  .25rem;
+  width:  100%; 
+}
+
+.question {
+  position: relative;
+  display: block;
+  padding: 0 20px;
+}
+
+.question h4 {
+  color: #BF5FFF;
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+.footer {
+  background-color: #333;
+  color: white;
+}
+
+.iconrow {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+
+/* ==========================================================================
+Other Decides
+========================================================================== */
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+  #banner .inner header h2 {
+    font-size: 2.0em;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+  .mentor,
+  .judge,
+  .organizer {
+    display: block;
+  }
+
+  .mentor .picture,
+  .judge .picture,
+  .organizer .picture {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+
+  .mentor .desc,
+  .judge .desc,
+  .organizer .desc {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    max-height: 130px;
+    min-height: 130px;
+  }
+
+  .sponsor {
+    background-size: contain;
+  }
+
+  #banner .inner p {
+      font-size: 1em;
+  }
+  
+  #banner .inner header h2 {
+    font-size: 2.5em;
+  }
+
+  #banner .inner {
+    padding: 3em;
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+  #banner {
+    padding: 3em 0 2.5em 0;
+    /*padding-top: 6em;*/
+
+  }
+  #banner .inner {
+    margin-bottom: 2.5em;
+  }
+
+}   
+
+/* ==========================================================================
+Archive
+========================================================================== */
+
+/*   .iconrow img {
+  width: 40px;
+  height: 40px;
+  opacity: .8;
+}
+
+.iconrow img:hover{
+  opacity: 1;
+} */
+
+
+/* .icon-holder {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+} */
