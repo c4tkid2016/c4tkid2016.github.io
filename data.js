@@ -186,7 +186,7 @@ var data = {
         id: "men2",
         img: "img/mentors-2016/erick-soedjasa.jpg",
         name: "Erick Soedjasa",
-        title: "CTO of Indomog",
+        title: "CTO of RebelWorks",
         desc: "<p></p>"
       }, {
         id: "men3",
@@ -198,7 +198,7 @@ var data = {
         id: "men4",
         img: "img/mentors-2016/izak-jenie.jpg",
         name: "Izak Jenie",
-        title: "Founder of Jatis Group",
+        title: "CEO of JAS Kapital",
         desc: "<p></p>"
       }, {
         id: "men5",
@@ -216,7 +216,7 @@ var data = {
         id: "men7",
         img: "img/mentors-2016/christopher-angkasa.jpg",
         name: "Christopher Angkasa",
-        title: "Value Investor",
+        title: "Founder of Clapham Collective",
         desc: "<p></p>"
       }, {
         id: "men8",
@@ -248,6 +248,12 @@ var data = {
         name: "Abraham Viktor",
         title: "CEO of Taralite",
         desc: "<p></p>"
+      }, {
+        id: "men13",
+        img: "img/mentors-2016/norman-sasono.jpg",
+        name: "Norman Sasono",
+        title: "CIO of Bizzy.co.id",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
@@ -263,7 +269,12 @@ var data = {
         name: "William Eka",
         title: "Associate Director of Skystar Capital",
         desc: "<p></p>"
-      }
+      }, {
+        id: "jdg2",
+        img: "img/judges-2016/john-drexler.jpg",
+        name: "John Drexler",
+        title: "Associate of Sovereign's Capital",
+        desc: "<p></p>"
     ],
     organizers2016: [
       {
