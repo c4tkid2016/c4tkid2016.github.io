@@ -275,6 +275,7 @@ var data = {
         name: "John Drexler",
         title: "Associate of Sovereign's Capital",
         desc: "<p></p>"
+      }  
     ],
     organizers2016: [
       {
