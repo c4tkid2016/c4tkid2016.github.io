@@ -254,6 +254,18 @@ var data = {
         name: "Norman Sasono",
         title: "CIO of Bizzy.co.id",
         desc: "<p></p>"
+      }, {
+        id: "men14",
+        img: "img/mentors-2016/anthonius-henricus.jpg",
+        name: "Antonius Henricus",
+        title: "Director of Microsoft Indonesia",
+        desc: "<p></p>"
+      }, {
+        id: "men15",
+        img: "img/mentors-2016/iriving-hutagalung.jpg",
+        name: "Irving Hutagalung",
+        title: "Technical Evangelist of Microsoft Indonesia",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
