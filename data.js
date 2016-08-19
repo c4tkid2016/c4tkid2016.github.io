@@ -262,7 +262,7 @@ var data = {
         desc: "<p></p>"
       }, {
         id: "men15",
-        img: "img/mentors-2016/iriving-hutagalung.jpg",
+        img: "img/mentors-2016/irving-hutagalung.jpg",
         name: "Irving Hutagalung",
         title: "Technical Evangelist of Microsoft Indonesia",
         desc: "<p></p>"
