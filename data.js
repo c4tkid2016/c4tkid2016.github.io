@@ -266,6 +266,12 @@ var data = {
         name: "Irving Hutagalung",
         title: "Technical Evangelist of Microsoft Indonesia",
         desc: "<p></p>"
+      }, {
+        id: "men16",
+        img: "img/mentors-2016/andrew-senduk.jpg",
+        name: "Andrew Senduk",
+        title: "Group Chief Revenue Officer of Orami",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
