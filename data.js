@@ -234,7 +234,7 @@ var data = {
         id: "men10",
         img: "img/mentors-2016/nuniek-tirta-sari.jpg",
         name: "Nuniek Tirta Sari",
-        title: "PR Consulting at Wantedly",
+        title: "Blogger and #Startuplokal Initiator",
         desc: "<p></p>"
       }, {
         id: "men11",
