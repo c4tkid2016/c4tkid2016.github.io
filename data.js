@@ -272,6 +272,12 @@ var data = {
         name: "Andrew Senduk",
         title: "Group Chief Revenue Officer of Orami",
         desc: "<p></p>"
+      }, {
+        id: "men17",
+        img: "img/mentors-2016/daud-aditirto.jpg",
+        name: "Daud Aditirto",
+        title: "Growth Partnerships and Internet.org at Facebook",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
