@@ -294,10 +294,16 @@ var data = {
         title: "Associate Director of Skystar Capital",
         desc: "<p></p>"
       }, {
-        id: "jdg2",
+        id: "jdg3",
         img: "img/judges-2016/john-drexler.jpg",
         name: "John Drexler",
         title: "Associate of Sovereign's Capital",
+        desc: "<p></p>"
+      }, {
+        id: "jdg4",
+        img: "img/judges-2016/renny-yosinta.jpg",
+        name: "Renny Yosinta",
+        title: "Marketing Manager of YesHeIs",
         desc: "<p></p>"
       }  
     ],
