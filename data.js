@@ -674,6 +674,30 @@ var data = {
       }
     ]
   },
+  sponsors2016: [
+    {
+      name: "Sovereigns Capital",
+      img: "img/sponsors-2016/sponsor_sovereignscapital.jpg",
+      url: "http://sovereignscapital.com/"
+    },
+    {
+      name: "Berrykitchen",
+      img: "img/sponsors-2016/sponsor_berrykitchen.jpg",
+      url: "http://berrykitchen.com/"
+    }
+  ],
+  partners2016: [
+    {
+      name: "SABDA",
+      img: "img/partners-2016/sponsor_sabda.png",
+      url: "http://sabda.org/"
+    },
+    {
+      name: "YesHeIs",
+      img: "img/partners-2016/sponsor_yesheis.png",
+      url: "http://yesheis.com/"
+    }
+  ],
   sponsors: [
     {
       name: "Leadership Network",

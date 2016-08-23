@@ -288,19 +288,22 @@ Winners
 }
 
 /* ==========================================================================
-Sponsors
+Sponsors & Partners
 ========================================================================== */
 
-.sponsors {
-  display: none; /* Hide for now */
-  
-  width: 100%;
-  height: 120px;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position: center ;
-  margin-bottom: 20px;
-}
+
+
+  .sponsor,
+  .partner {
+    /*display: none; /* Hide for now */
+    
+    width: 100%;
+    height: 120px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center ;
+    margin-bottom: 20px;
+  }
 
 /* ==========================================================================
 Challenges
@@ -570,7 +573,8 @@ Other Decides
     min-height: 130px;
   }
 
-  .sponsor {
+  .sponsor,
+  .partner {
     background-size: contain;
   }
 

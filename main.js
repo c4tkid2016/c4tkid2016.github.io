@@ -4,9 +4,6 @@ console.log('Hello Hacker! If you\'re reading this, you should join us!')
 var templateWinner = Tangular.compile(document.getElementById('template-winner').innerHTML);
 $( ".winners .container" ).append(templateWinner(data));
 
-var templateSponsor = Tangular.compile(document.getElementById('template-sponsors').innerHTML);
-$( ".sponsors .container" ).append(templateSponsor(data));
-
 var templateChallenge = Tangular.compile(document.getElementById('template-challenge').innerHTML);
 $( ".challenges .container" ).append(templateChallenge(data));
 
@@ -18,6 +15,12 @@ $( ".judge .container" ).append(templateJudge(data));
 
 var templateOrganizer = Tangular.compile(document.getElementById('template-organizer').innerHTML);
 $( ".organizer .container" ).append(templateOrganizer(data));
+
+var templateSponsor = Tangular.compile(document.getElementById('template-sponsors').innerHTML);
+$( ".sponsors .container" ).append(templateSponsor(data));
+
+var templatePartner = Tangular.compile(document.getElementById('template-partners').innerHTML);
+$( ".partners .container" ).append(templatePartner(data));
 
 var templateApi = Tangular.compile(document.getElementById('template-api').innerHTML);
 $( ".api .container" ).append(templateApi(data));
