@@ -702,6 +702,11 @@ var data = {
       name: "YesHeIs",
       img: "img/partners-2016/sponsor_yesheis.png",
       url: "http://yesheis.com/"
+    },
+    {
+      name: "MECS+",
+      img: "img/partners-2016/sponsor_mecs.png",
+      url: "http://mecscross.com/"
     }
   ],
   sponsors: [
