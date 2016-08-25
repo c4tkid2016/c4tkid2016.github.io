@@ -700,7 +700,7 @@ var data = {
   partners2016: [
     {
       name: "SABDA",
-      img: "img/partners-2016/sponsor_sabda.png",
+      img: "img/partners-2016/sponsor_sabda.jpg",
       url: "http://sabda.org/"
     },
     {
