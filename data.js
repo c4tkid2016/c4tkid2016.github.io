@@ -690,6 +690,11 @@ var data = {
       name: "Berrykitchen",
       img: "img/sponsors-2016/sponsor_berrykitchen.jpg",
       url: "http://berrykitchen.com/"
+    },
+    {
+      name: "Medico",
+      img: "img/sponsors-2016/sponsor_medico.jpg",
+      url: "http://medico.id/"
     }
   ],
   partners2016: [
