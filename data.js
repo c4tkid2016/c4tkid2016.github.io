@@ -705,6 +705,11 @@ var data = {
       name: "Clapham",
       img: "img/sponsors-2016/sponsor_clapham.jpg",
       url: "http://clapham.co.id/"
+    },
+    {
+      name: "Hacktiv8",
+      img: "img/sponsors-2016/sponsor_hacktiv8.jpg",
+      url: "http://hacktiv8.com/"
     }
   ],
   partners2016: [
