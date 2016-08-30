@@ -695,6 +695,11 @@ var data = {
       name: "Medico",
       img: "img/sponsors-2016/sponsor_medico.jpg",
       url: "http://medico.id/"
+    },
+    {
+      name: "Clapham",
+      img: "img/sponsors-2016/sponsor_clapham.jpg",
+      url: "http://clapham.co.id/"
     }
   ],
   partners2016: [
