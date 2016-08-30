@@ -682,6 +682,11 @@ var data = {
   },
   sponsors2016: [
     {
+      name: "Kejora",
+      img: "img/sponsors-2016/sponsor_kejora.jpg",
+      url: "http://kejorahq.com/"
+    },
+    {
       name: "Sovereigns Capital",
       img: "img/sponsors-2016/sponsor_sovereignscapital.jpg",
       url: "http://sovereignscapital.com/"
