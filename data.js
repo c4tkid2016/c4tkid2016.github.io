@@ -727,6 +727,11 @@ var data = {
       name: "MECS+",
       img: "img/partners-2016/sponsor_mecs.png",
       url: "http://mecscross.com/"
+    },
+    {
+      name: "Generasi Zeru",
+      img: "img/partners-2016/sponsor_generasizeru.png",
+      url: "http://generasizeru.com/"
     }
   ],
   sponsors: [
