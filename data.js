@@ -278,6 +278,12 @@ var data = {
         name: "Daud Aditirto",
         title: "Growth Partnerships and Internet.org at Facebook",
         desc: "<p></p>"
+      }, {
+        id: "men18",
+        img: "img/mentors-2016/thomas-budiman.jpg",
+        name: "Thomas Budiman",
+        title: "Head of Product Design of Bukalapak",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
