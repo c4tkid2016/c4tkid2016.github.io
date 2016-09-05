@@ -36,9 +36,10 @@ h1 {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: .2em;
-  padding: 10px;
-  margin-top: 30px;
+  padding: 10px 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 150px;
 }
 
 .button-black {
@@ -49,6 +50,11 @@ h1 {
 .button-white {
   color: white;
   border: 2px solid white;
+}
+
+.button-yellow {
+  color: #F8A419;
+  border: 2px solid #F8A419;
 }
 
   .button:hover {
@@ -66,23 +72,34 @@ Banner
 ========================================================================== */
 
 #banner {
-  color: #7c8081;
-  font-family: sans-serif;
-  font-size: 15pt;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-  line-height: 1.75em;
-
-  background-attachment: scroll, scroll, scroll, fixed;
-  background-color: #645862;
-  background-image: url("img/light-bl.svg"), url("img/light-br.svg"), url("img/overlay.png"), url("img/slide-bg.jpg");
-  background-position: bottom left, bottom right, top left, top center;
-  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-  background-size: 25em, 25em, auto, cover;
+  background-image: url("img/images-2016/bg-blue.png");
+  background-position: top-left;
+  background-repeat: repeat;
+  background-size: 250px, 250px, auto, cover;
   color: white;
   cursor: default;
   text-align: center;
 }
+
+  #banner .logo {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }
+
+    #banner .logo img {
+      width: 250px;
+    }
+
+  #banner .disrupt {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+    #banner .disrupt img {
+      width: 60%;
+    }
+
 
   #banner .inner {
     -moz-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -94,7 +111,7 @@ Banner
     -webkit-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
-    background: rgba(52, 27, 43, 0.5);
+    /*background: rgba(52, 27, 43, 0.5);*/
     color: white;
     display: inline-block;
     opacity: 0;
@@ -102,15 +119,21 @@ Banner
     text-align: center;
   }
 
-    #banner .inner header {
+    #banner .inner .disrupt small {
+        color: #FFFFFF;
+        font-size: 12px;
+        vertical-align: middle;
+      }
+
+    /*#banner .inner header {
       display: inline-block;
       border-bottom: solid 2px;
       border-top: solid 2px;
       margin: 0 0 2em 0;
       padding: 3px 0 3px 0;
-    }
+    }*/
 
-      #banner .inner header h2 {
+      /*#banner .inner header h2 {
         border-bottom: solid 2px;
         border-top: solid 2px;
         font-size: 1.3em;
@@ -121,9 +144,9 @@ Banner
         padding-left: 0.05em;
         position: relative;
         text-transform: uppercase;
-      }
+      }*/
 
-    #banner .inner p {
+    /*#banner .inner p {
       font-size: 0.9em;
       letter-spacing: 0.1em;
       margin: 0;
@@ -138,14 +161,49 @@ Banner
 
     #banner .inner footer {
       margin: 2em 0 0 0;
+    }*/
+
+/* ==========================================================================
+Verse
+========================================================================== */
+
+#verse {
+  background-image: url("img/images-2016/bg-verse.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-bottom: 27.578125%;
+  color: white;
+  cursor: default;
+  text-align: center;
+  position: relative;
+}
+
+  #verse .inner {
+    position: absolute;
+    top: 27.578125%;
+    left: 27.578125%;
+  }
+
+    #verse .inner p {
+      font-size: 2em;
     }
+
+    #verse .inner small {
+      font-size: 1em;
+    }
+
 
 /* ==========================================================================
 About
 ========================================================================== */
 
 .about {
-  background-color: #eaeaea;
+  background-image: url("img/images-2016/bg-white.png");
+  background-position: top-left;
+  background-repeat: repeat;
+  background-size: 250px, 250px, auto, cover;
   text-align: center;
   padding: 50px 0;
 }
@@ -161,7 +219,7 @@ About
   }
 
   .about p {
-    color: #7c8081;
+    color: #666666;
     padding-top: 30px;
     max-width: 800px;
     line-height: 1.5em;
@@ -174,9 +232,10 @@ What Is
 ========================================================================== */
 
 .what-is {
-  background-color: #ffffff;
+  background-color: #132147;
   padding: 50px 0;
   text-align: center;
+  color: #F9A519;
 }
 
   .what-is h1 {
@@ -187,11 +246,20 @@ What Is
     display: inline-block;
   }
 
+  .what-is h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .what-is p {
-    padding-top: 30px;
-    line-height: 1.5em;
-    font-size: 18px;
+    line-height: 1.8em;
+    font-size: 1.3em;
     text-align: left;
+  }
+
+  .what-is a {
+    color: #F9A519;
+    text-decoration: underline;
   }
 
   .what-is ul li {
@@ -204,26 +272,34 @@ What Is
 Map & Schedule
 ========================================================================== */
 
-.schedule {
-  background-color: #eaeaea;
-}
-  
-  .schedule h1,
-  .schedule h3 {
-    text-align: center;
-  }
-
-  .schedule h3 {
-    margin-bottom: 15px;
-  }
-
-  .schedule .maps {
-  background-color: #bbb;
-  height: 400px;
+.map {
+  background-image: url("img/images-2016/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-bottom: 32.03125%;
+  color: white;
+  cursor: default;
+  text-align: left;
+  position: relative;
 }
 
-  .schedule .maps iframe {
+  .map iframe {
     pointer-events: none;
+    height: 400px;
+    padding-bottom: 40px;
+  }
+
+  .map h2 {
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .map p {
+    font-size: 1.8em;
+    line-height: 1.5em;
   }
 
 th {
@@ -587,7 +663,7 @@ Other Decides
   }
 
   #banner .inner {
-    padding: 3em;
+    padding: 1em;
   }
 }
 
