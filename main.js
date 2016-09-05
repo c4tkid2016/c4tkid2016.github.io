@@ -10,8 +10,8 @@ $( ".challenges .container" ).append(templateChallenge(data));
 var templateMentor = Tangular.compile(document.getElementById('template-mentor').innerHTML);
 $( ".mentor .container" ).append(templateMentor(data));
 
-var templateJudge = Tangular.compile(document.getElementById('template-judge').innerHTML);
-$( ".judge .container" ).append(templateJudge(data));
+// var templateJudge = Tangular.compile(document.getElementById('template-judge').innerHTML);
+// $( ".judge .container" ).append(templateJudge(data));
 
 var templateOrganizer = Tangular.compile(document.getElementById('template-organizer').innerHTML);
 $( ".organizer .container" ).append(templateOrganizer(data));
