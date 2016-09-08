@@ -15,31 +15,8 @@ h1, h2, h3, h4, h5, h6, p, b, i, li, td, a {
   font-family: 'Lato', sans-serif;
 }
 
-h1 {
-  font-size: 32px;
-  margin-top: 0;
-}
-
-h2 {
-  font-size: 28px;
-  margin-top: 0;
-}
-
-p, td {
-  font-size: 18px;
-  line-height: 1.5em;
-}
-
-.block {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.container h1,
-.container h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
+section {
+  padding: 50px;
 }
 
 .button {
@@ -51,7 +28,7 @@ p, td {
   padding: 10px 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 150px;
+  border-radius: 45px !important;
 }
 
 .button-blue {
@@ -84,11 +61,16 @@ p, td {
     transition: 500ms ease;
   }
 
-.btn-xl {
+.btn-group-xl>.btn, .btn-xl {
   padding: 15px 24px !important;
   font-size: 24px !important;
   line-height: 1.5 !important;
-  border-radius: 8px !important;
+}
+
+@media (max-width: 768px) {
+  .button {
+    border-radius: 45px !important;
+  }
 }
 
 /* ==========================================================================
@@ -101,13 +83,11 @@ Banner
   background-repeat: repeat;
   background-size: 250px, 250px, auto, cover;
   color: white;
-  cursor: default;
   text-align: center;
 }
 
   #banner .logo {
     text-align: left;
-    margin-left: 10%;
     margin-bottom: 10px;
   }
 
@@ -116,15 +96,14 @@ Banner
     }
 
   #banner .disrupt {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
     #banner .disrupt img {
       width: 50%;
     }
 
-  #banner .inner {
+  /*#banner .inner {
     -moz-animation: reveal-banner 1s 0.25s ease-in-out;
     -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
     -o-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -134,83 +113,15 @@ Banner
     -webkit-animation-fill-mode: forwards;
     -o-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
-    /*background: rgba(52, 27, 43, 0.5);*/
-    color: white;
-    display: inline-block;
-    opacity: 0;
-    padding: 0 !important;
-    text-align: center;
-  }
+  }*/
 
-    #banner .inner .disrupt small {
+    /*#banner .inner .disrupt small {
       color: #FFFFFF;
       font-size: 12px;
       vertical-align: middle;
-    }
-
-    #banner .inner .disrupt p {
-      font-size: 24px;
-      margin-top: 40px;
-    }
+    }*/
 
 @media only screen and (max-width: 768px) {
-  #banner {
-    background-image: url("img/images-2016/bg-blue.png");
-    background-position: top-left;
-    background-repeat: repeat;
-    background-size: 250px, 250px, auto, cover;
-    color: white;
-    cursor: default;
-    text-align: center;
-  }
-
-    #banner .logo {
-      text-align: center;
-      margin: 0;
-    }
-
-      #banner .logo img {
-        margin-top: 20px;
-        width: 150px
-      }
-
-    #banner .disrupt {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-      #banner .disrupt img {
-        width: 80%;
-      }
-
-    #banner .inner {
-      -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-      -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-      -o-animation: reveal-banner 1s 0.25s ease-in-out;
-      -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-      animation: reveal-banner 1s 0.25s ease-in-out;
-      -moz-animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-      -o-animation-fill-mode: forwards;
-      -ms-animation-fill-mode: forwards;
-      /*background: rgba(52, 27, 43, 0.5);*/
-      color: white;
-      display: inline-block;
-      opacity: 0;
-      padding: 0 !important;
-      text-align: center;
-    }
-
-      #banner .inner .disrupt small {
-        color: #FFFFFF;
-        font-size: 12px;
-        vertical-align: middle;
-      }
-
-      #banner .inner .disrupt p {
-        font-size: 24px;
-        margin-top: 40px;
-      }
 }
 
 /* ==========================================================================
@@ -229,18 +140,8 @@ Verse
   text-align: center;
 }
 
-  #verse .inner {
-    text-align: center;
-  }
-
-  #verse p {
-    font-size: 24px;
-  }
-
-  #verse small {
-    font-size: 20px;
-  }
-
+@media only screen and (max-width: 768px) {
+}
 
 /* ==========================================================================
 About
@@ -252,22 +153,19 @@ About
   background-repeat: repeat;
   background-size: 250px, 250px, auto, cover;
   text-align: center;
+  color: #464646;
 }
-
-  .about h1 {
-    color: #464646;
-  }
-
-    .about h1 div {
-      display: inline-block;
-    }
 
   .about p {
     color: #464646;
     line-height: 1.5em;
     padding-top: 30px;
     margin-bottom: 0;
+    font-size: 1.3em;
   }
+
+@media only screen and (max-width: 768px) {
+}
 
 /* ==========================================================================
 What Is
@@ -276,13 +174,17 @@ What Is
 .what-is {
   background-color: #132147;
   text-align: center;
-  color: #F9A519;
+  color: #FFFFFF;
 }
+
+  .what-is h2 {
+    color: #F9A519;
+  }
 
   .what-is p {
     line-height: 1.5em;
     text-align: left;
-    color: #FFFFFF;
+    font-size: 1.3em;
   }
 
   .what-is a {
@@ -291,10 +193,13 @@ What Is
   }
 
   .what-is ul li {
-    font-size: 18px;
+    font-size: 1.3em;
     text-align: left;
     color: #FFFFFF;
   }
+
+@media only screen and (max-width: 768px) {
+}
 
 /* ==========================================================================
 Map
@@ -315,13 +220,11 @@ Map
 
   .map iframe {
     pointer-events: none;
-    height: 400px;
-    padding-bottom: 40px;
+    height: 260px;
   }
 
-  .map h2 {
-    margin-bottom: 30px;
-    text-align: left;
+  .map p {
+    font-size: 1.3em;
   }
 
 /* ==========================================================================
@@ -346,8 +249,8 @@ Join
 ========================================================================== */
 
 .join {
-  padding-bottom: 0;
   background-color: #E1E1E1;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -360,7 +263,7 @@ Awards
   background-size: cover;
   width: 100%;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 30%;
   color: white;
   cursor: default;
   text-align: left;
@@ -445,6 +348,7 @@ Mentors & Judges
 .judge,
 .organizer {
   display: flex;
+  text-align: center;
 }
 
 .mentor .picture,
@@ -649,18 +553,18 @@ Other Decides
 ========================================================================== */
 
 /* SMARTPHONES PORTRAIT */
-@media only screen and (min-width: 300px) {
-}
+/*@media only screen and (min-width: 300px) {
+}*/
 
 /* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
+/*@media only screen and (min-width: 480px) {
   #banner .inner header h2 {
     font-size: 2.0em;
   }
-}
+}*/
 
 /* TABLETS PORTRAIT */
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .mentor,
   .judge,
   .organizer {
@@ -702,21 +606,18 @@ Other Decides
   #banner .inner {
     padding: 1em;
   }
-}
+}*/
 
 /* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 
   #banner {
     padding: 3em 0 2.5em 0;
-    /*padding-top: 6em;*/
-
   }
   #banner .inner {
     margin-bottom: 2.5em;
   }
-
-}   
+}   */
 
 /* ==========================================================================
 Archive
