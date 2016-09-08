@@ -309,24 +309,20 @@
   <!-- Mentors -->
   <section class="mentor">
     <div class="container">
-      <div class="row">
         <h1>Mentors</h1>
-          <script id="template-mentor">
+        <script id="template-mentor">
           {{foreach mentor in people.mentors2016}}
-          <div class="col-xs-12 col-sm-4 col-md-3">
-            <div class="mentor" data-toggle="modal" data-target="#{{mentor.id}}">
-              <div class="picture img-circle" style="background-image: url('{{mentor.img}}')">
-              </div>
-              <div class="desc">
-                <h3>{{mentor.name}}</h3>
-                <p>{{mentor.title}}</p>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="mentor" data-toggle="modal" data-target="#{{mentor.id}}">
+                <div class="picture img-circle" style="background-image: url('{{mentor.img}}')"></div>
+                <div class="desc">
+                  <h3>{{mentor.name}}</h3>
+                  <p>{{mentor.title}}</p>
+                </div>
               </div>
             </div>
-          </div>
           {{end}}
-          </script>
-        </div>
-      </div>
+        </script>
     </div>
   </section>
 
@@ -407,7 +403,7 @@
   </div> -->
 
   <!-- Join as Sponsors, Media, GA -->
-  <div class="join-sponsor block">
+  <section class="join-sponsor">
     <div class="container">
       <div class="row">
         <h1>Menjadi bagian dari Code For The Kingdom Jakarta</h1>
@@ -422,11 +418,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="sponsors block">
+  <!-- Partners -->
+  <section class="sponsors">
     <div class="container">
-      <h2>Event Sponsors</h2>
+      <h1>Event Sponsors</h1>
       <div class="row">
       <!-- Start Sponsors Item -->
         <script id="template-sponsors">
@@ -441,10 +438,12 @@
       <!-- End Sponsors Item -->
       </div>
     </div>
-  </div>
-  <div class="partners block">
+  </section>
+
+  <!-- Partners -->
+  <section class="partners">
     <div class="container">
-      <h2>Partners</h2>
+      <h1>Partners</h1>
       <div class="row">
       <!-- Start Partners Item -->
         <script id="template-partners">
@@ -459,7 +458,7 @@
       <!-- End Sponsors Item -->
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="api block">
     <div class="container">
@@ -499,7 +498,7 @@
   </div>
 
   <!-- Rules -->
-  <div class="rules block">
+  <!-- <div class="rules block">
     <div class="container">
       <h1>Rules</h1>
       <ol>
@@ -511,10 +510,10 @@
         <li><strong>FINISH ON TIME</strong> - Participant must submit their project by the submission time on Sunday afternoon. No late submissions will be accepted.</li>   
       </ol>
     </div>
-  </div>
+  </div> -->
 
   <!-- FAQs -->
-  <div class="faq block">
+  <section class="faq">
     <div class="container">
       <h2>Frequently Asked Questions</h2> 
       <div class="row">
@@ -532,7 +531,7 @@
         <!-- End FAQ Item -->
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Footer -->
   <div class="footer">
