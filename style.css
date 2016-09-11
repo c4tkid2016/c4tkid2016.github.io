@@ -1,4 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('Avenir-Book.ttf');
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('Avenir-Medium.ttf');
+}
 
 /*BANNER from C4TK */
 @-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -11,8 +19,12 @@
 General
 ========================================================================== */
 
-h1, h2, h3, h4, h5, h6, p, b, i, li, td, a {
-  font-family: 'Lato', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir-Medium' !important;
+}
+
+p, b, i, li, td, a {
+  font-family: 'Avenir-Book' !important;
 }
 
 section {
