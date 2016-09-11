@@ -20,18 +20,11 @@ section {
   padding-bottom: 50px;
 }
 
-.about h1,
-.what-is h1,
-.map h1,
-.join h1,
-.awards h1,
-.mentor h1,
-.join-sponsor h1,
-.sponsors h1,
-.partners h1,
-.faq h1 {
-  margin-bottom: 20px;
-}
+h1 {font-size: 2.2em !important;margin:0 0 30px 0 !important;}
+h2 {font-size: 2.0em !important;}
+h3 {font-size: 1.8em !important;}
+h4 {font-size: 1.3em !important;}
+p, li {font-size: 1.2em !important;}
 
 .button {
   display: inline-block;
@@ -82,42 +75,21 @@ section {
   line-height: 1.5 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .button {
     border-radius: 45px !important;
   }
 
-  .about h1,
-  .what-is h1,
-  .map h1,
-  .join h1,
-  .awards h1,
-  .mentor h1,
-  .join-sponsor h1,
-  .sponsors h1,
-  .partners h1,
-  .faq h1 {
-    font-size: 1.8em;
-  }
-
-  .about p,
-  .what-is p,
-  .what-is ul li,
-  .map p,
-  .join p,
-  .awards p,
-  .mentor p,
-  .join-sponsor p,
-  .sponsors p,
-  .partners p,
-  .faq p {
-    font-size: 1.1em !important;
-  }
+  h1 {font-size: 1.8em !important;}
+  h2 {font-size: 1.5em !important;}
+  h3 {font-size: 1.3em !important;}
+  h4 {font-size: 1.1em !important;}
+  p, li {font-size: 1.1em !important;}
 }
 
 /* ==========================================================================
@@ -150,25 +122,7 @@ Banner
       width: 50%;
     }
 
-  /*#banner .inner {
-    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-    -o-animation: reveal-banner 1s 0.25s ease-in-out;
-    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-    animation: reveal-banner 1s 0.25s ease-in-out;
-    -moz-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-  }*/
-
-    /*#banner .inner .disrupt small {
-      color: #FFFFFF;
-      font-size: 12px;
-      vertical-align: middle;
-    }*/
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #banner {
     background-size: 150px, 150px, auto, cover;
   }
@@ -202,7 +156,7 @@ Verse
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   #verse {
     height: 250px;
     padding-bottom: 0;
@@ -254,7 +208,7 @@ About
     height: 100%;
   }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .about {
     background-size: 150px, 150px, auto, cover;
   }
@@ -292,7 +246,7 @@ What Is
     color: #FFFFFF;
   }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .what-is ul {
     padding-left: 20px;
   }
@@ -317,15 +271,16 @@ Map
   .map iframe {
     pointer-events: none;
     height: 260px;
+    margin-bottom: 20px;
   }
 
   .map p {
     font-size: 1.3em;
   }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .map {
-    height: 410px;
+    height: 430px;
   }
 
     .map iframe {
@@ -359,6 +314,16 @@ Join
   text-align: center;
 }
 
+.join iframe {
+  height: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+  .join iframe {
+    height: 700px;
+  }
+}
+
 /* ==========================================================================
 Awards
 ========================================================================== */
@@ -389,15 +354,25 @@ Awards
     margin: 20px 0;
   }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .awards {
     height: 450px;
   }
 }
 
 /* ==========================================================================
-Mentors & Judges
+Mentors & Judges & Organizers
 ========================================================================== */
+
+.mentors {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.organizers {
+  text-align: center;
+  padding-bottom: 0;
+}
 
 .mentor,
 .judge,
@@ -422,7 +397,7 @@ Mentors & Judges
   .organizer .desc {
     background-color: #fff;
     padding: 10px;
-    height: 100px;
+    height: 130px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -433,11 +408,50 @@ Mentors & Judges
   .organizer .desc h3 {
     color: #F8A419;
     margin: 0;
+    margin-bottom: 5px;
+  }
+
+@media only screen and (max-width: 767px) {
+  .mentor,
+  .judge,
+  .organizer {
+    text-align: left;
     margin-bottom: 10px;
   }
 
-@media only screen and (max-width: 768px) {
-  
+  .mentor .picture,
+  .judge .picture,
+  .organizer .picture {
+    width: 30%;
+    height: 90px;
+    padding: 0;
+  }
+
+  .mentor .desc,
+  .judge .desc,
+  .organizer .desc {
+    background-color: #fff;
+    padding: 5px;
+    height: 90px;
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .mentor .desc h3,
+  .judge .desc h3,
+  .organizer .desc h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+
+  .mentor .desc p,
+  .judge .desc p,
+  .organizer .desc p {
+    word-wrap: break-word;
+  }
 }
 
 /* ==========================================================================
@@ -446,12 +460,8 @@ Join As Sponsor
 
 .join-sponsor {
   background-color: #EAEAEA;
+  text-align: center;
 }
-
-  .join-sponsor h1 {
-    text-align: center;
-    margin-bottom: 60px;
-  }
 
 /* ==========================================================================
 Sponsors & Partners
@@ -473,11 +483,21 @@ Sponsors & Partners
 .sponsor,
 .partner {
   width: 100%;
-  height: 120px;
+  height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center ;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .sponsors {
+    padding-bottom: 10px;
+  }
+
+  .partners {
+    padding-top: 10px;
+  }
 }
 
 /* ==========================================================================
@@ -523,6 +543,12 @@ FAQ
   .question p {
     padding-bottom: 20px;
   }
+
+@media only screen and (max-width: 767px) {
+  .question h4, .question p {
+    padding-bottom: 0;
+  }
+}
 
 /* ==========================================================================
 Winners

@@ -97,7 +97,7 @@
           <p><a href="http://leadnet.org/announcing-code-for-the-kingdoms-global-hackathon-awards/" target="_blank">HACKATHON</a> &mdash; dari asal kata "hack" dan "marathon" &mdash; adalah suatu kegiatan dimana peserta dengan talenta yang berbeda-beda (misalnya: programmer, desainer dan produk) berkumpul untuk menyelesaikan sebuah proyek dengan tujuan yang ditentukan bersama secara nonstop selama akhir pekan. Hackathon Code for The Kingdom akan diadakan di Jakarta pada tanggal 21-23 Oktober 2016 dan terbuka untuk semua pihak.</p>
         </div>
         <div class="col-sm-10 col-sm-offset-1">
-          <h1>Apakah itu CHALLENGES?</h1>
+          <h1 style="margin-top:30px!important">Apakah itu CHALLENGES?</h1>
           <p>CHALLENGES adalah isu-isu atau tantangan secara umum yang dihadapi oleh komunitas atau umat manusia global ataupun yang dihadapi oleh komunitas lokal di sekitar kita.<br><br>Beberapa contoh Challenges global dan regional :</p>
             <ul>
               <li>Bagaimana teknologi dapat turut menjaga kesucian dan kesetiaan dalam pernikahan?</li>
@@ -106,7 +106,7 @@
             </ul>
         </div>
         <div class="col-sm-10 col-sm-offset-1">
-          <h1>Apakah itu PROJECT?</h1>
+          <h1 style="margin-top:30px!important">Apakah itu PROJECT?</h1>
           <p>PROJECT adalah isu atau masalah tertentu yang cukup spesifik yang akan dipecahkan atau diselesaikan dalam kelompok kerja selama Hackathon berlangsung. Setiap orang mempunyai panggilan <i>(calling)</i> yang cukup unik dan spesifik dari Tuhan sehingga kami tidak akan membatasi jumlah project yang dipresentasikan dalam C4TK. Setiap partisipan C4TK akan tergabung dalam kelompok-kelompok kerja projects sesuai dengan panggilannya masing-masing.<br><br>
           Contoh dari Projects dari C4TK Jakarta 2015 : <i>The Alexa Bible</i> adalah sebuah aplikasi Alkitab yang didevelop di atas Amazon Echo. The Alexa Bible bertujuan untuk membantu orang yang buta dan lansia agar tetap bisa mengakses Alkitab dengan keterbatasan mereka. [<a href="http://leadnet.org/announcing-code-for-the-kingdoms-global-hackathon-awards/" target="_blank">Pemenang Global People's Choice Award 2015</a>]</p>
         </div>
@@ -118,10 +118,10 @@
   <section class="map">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-8">
           <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Wisma%20Barito%20Pacific%2C%20Slipi%2C%20Special%20Capital%20Region%20of%20Jakarta%2C%20Indonesia&key=AIzaSyDV1gu0zGqNvnAmVYihtXLORVMVYvvujAQ&zoom=15" allowfullscreen></iframe>
         </div>
-        <div class="col-sm-6" style="padding-left:30px">
+        <div class="col-xs-12 col-sm-4" style="padding-left:10px">
           <h1>Kejora HQ</h1>
           <p>Wisma Barito Pacific, Tower A Level 1<br>Jl. Letjen S. Parman Kav. 62-63<br>Jakarta 11410 - Indonesia</p>
           <p>+62 21 5366 0543</p>
@@ -217,8 +217,8 @@
     <div class="container">
       <div class="row">
         <h1>Daftar di Code For The Kingdom Jakarta</h1>
-        <div class="registration">
-          <iframe src="//eventbrite.com/tickets-external?eid=26874080097&ref=etckt" frameborder="0" height="500" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+        <div class="registration col-xs-12">
+          <iframe src="//eventbrite.com/tickets-external?eid=26874080097&ref=etckt" frameborder="0" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
         </div>
       </div>
     </div>
@@ -307,11 +307,11 @@
   </div> -->
   
   <!-- Mentors -->
-  <section class="mentor">
+  <section class="mentors">
     <div class="container">
       <div class="row">
         <h1>Mentors</h1>
-        <script id="template-mentor">
+        <script id="template-mentors">
           {{foreach mentor in people.mentors2016}}
             <div class="col-xs-12 col-sm-4 col-md-3">
               <div class="mentor" data-toggle="modal" data-target="#{{mentor.id}}">
@@ -367,14 +367,14 @@
   </div> -->
 
   <!-- Organizers -->
-  <!-- <div class="organizer block">
+  <section class="organizers">
     <div class="container">
     <h1>Organizers</h1>
-      <script id="template-organizer">
+      <script id="template-organizers">
       {{foreach organizer in people.organizers2016}}
       <div class="col-xs-12 col-sm-4 col-md-3">
         <div class="organizer" data-toggle="modal" data-target="#{{organizer.id}}">
-          <div class="picture" style="background-image: url('{{organizer.img}}')">
+          <div class="picture img-circle" style="background-image: url('{{organizer.img}}')">
           </div>
           <div class="desc">
             <h3>{{organizer.name}}</h3>
@@ -385,7 +385,7 @@
       {{end}}
       </script>
 
-      <div class="modal" id="{{organizer.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <!-- <div class="modal" id="{{organizer.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -400,22 +400,22 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-  </div> -->
+  </section>
 
   <!-- Join as Sponsors, Media, GA -->
   <section class="join-sponsor">
     <div class="container">
       <div class="row">
         <h1>Menjadi bagian dari Code For The Kingdom Jakarta</h1>
-        <div class="col-sm-4 text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 text-center">
           <a href="mailto:c4tkjkt@gmail.com?subject=Sponsorship C4TK Jakarta 2016" class="button button-blue btn btn-lg">Sponsorship</a>
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 text-center">
           <a href="mailto:c4tkjkt@gmail.com?subject=Media &amp; Partnership C4TK Jakarta 2016" class="button button-blue btn btn-lg">Media &amp; Partnership</a>
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 text-center">
           <a href="mailto:c4tkjkt@gmail.com?subject=General C4TK Jakarta 2016" class="button button-blue btn btn-lg">General Affairs</a>
         </div>
       </div>
@@ -430,7 +430,7 @@
       <!-- Start Sponsors Item -->
         <script id="template-sponsors">
         {{foreach sponsor in sponsors2016}}
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-6 col-sm-4 col-md-3">
           <a href="{{sponsor.url}}" target="_blank">
             <div class="sponsor" style="background-image: url('{{sponsor.img}}');"></div>
           </a>
@@ -450,7 +450,7 @@
       <!-- Start Partners Item -->
         <script id="template-partners">
         {{foreach partner in partners2016}}
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-6 col-sm-4 col-md-3">
           <a href="{{partner.url}}" target="_blank">
             <div class="partner" style="background-image: url('{{partner.img}}');"></div>
           </a>
@@ -465,8 +465,8 @@
   <!-- FAQs -->
   <section class="faq">
     <div class="container">
+      <h1>Frequently Asked Questions</h1> 
       <div class="row">
-        <h1>Frequently Asked Questions</h1> 
         <!-- Start FAQ Item -->
         <script id="template-faq">
         {{foreach question in faq2016id}}
