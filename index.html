@@ -70,8 +70,8 @@
   <section class="about">
     <div class="container">
       <div class="row">
-        <h1>Tentang Code For The Kingdom</h1>
         <div class="col-sm-10 col-sm-offset-1">
+        <h1>Tentang Code For The Kingdom</h1>
           <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ch_BNpKsDYM" frameborder="0" allowfullscreen></iframe>
           </div>
@@ -93,11 +93,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-          <h2>Apa itu HACKATHON?</h2>
+          <h1>Apa itu HACKATHON?</h1>
           <p><a href="http://leadnet.org/announcing-code-for-the-kingdoms-global-hackathon-awards/" target="_blank">HACKATHON</a> &mdash; dari asal kata "hack" dan "marathon" &mdash; adalah suatu kegiatan dimana peserta dengan talenta yang berbeda-beda (misalnya: programmer, desainer dan produk) berkumpul untuk menyelesaikan sebuah proyek dengan tujuan yang ditentukan bersama secara nonstop selama akhir pekan. Hackathon Code for The Kingdom akan diadakan di Jakarta pada tanggal 21-23 Oktober 2016 dan terbuka untuk semua pihak.</p>
         </div>
         <div class="col-sm-10 col-sm-offset-1">
-          <h2>Apakah itu CHALLENGES?</h2>
+          <h1>Apakah itu CHALLENGES?</h1>
           <p>CHALLENGES adalah isu-isu atau tantangan secara umum yang dihadapi oleh komunitas atau umat manusia global ataupun yang dihadapi oleh komunitas lokal di sekitar kita.<br><br>Beberapa contoh Challenges global dan regional :</p>
             <ul>
               <li>Bagaimana teknologi dapat turut menjaga kesucian dan kesetiaan dalam pernikahan?</li>
@@ -106,7 +106,7 @@
             </ul>
         </div>
         <div class="col-sm-10 col-sm-offset-1">
-          <h2>Apakah itu PROJECT?</h2>
+          <h1>Apakah itu PROJECT?</h1>
           <p>PROJECT adalah isu atau masalah tertentu yang cukup spesifik yang akan dipecahkan atau diselesaikan dalam kelompok kerja selama Hackathon berlangsung. Setiap orang mempunyai panggilan <i>(calling)</i> yang cukup unik dan spesifik dari Tuhan sehingga kami tidak akan membatasi jumlah project yang dipresentasikan dalam C4TK. Setiap partisipan C4TK akan tergabung dalam kelompok-kelompok kerja projects sesuai dengan panggilannya masing-masing.<br><br>
           Contoh dari Projects dari C4TK Jakarta 2015 : <i>The Alexa Bible</i> adalah sebuah aplikasi Alkitab yang didevelop di atas Amazon Echo. The Alexa Bible bertujuan untuk membantu orang yang buta dan lansia agar tetap bisa mengakses Alkitab dengan keterbatasan mereka. [<a href="http://leadnet.org/announcing-code-for-the-kingdoms-global-hackathon-awards/" target="_blank">Pemenang Global People's Choice Award 2015</a>]</p>
         </div>
@@ -122,7 +122,7 @@
           <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Wisma%20Barito%20Pacific%2C%20Slipi%2C%20Special%20Capital%20Region%20of%20Jakarta%2C%20Indonesia&key=AIzaSyDV1gu0zGqNvnAmVYihtXLORVMVYvvujAQ&zoom=15" allowfullscreen></iframe>
         </div>
         <div class="col-sm-6" style="padding-left:30px">
-          <h2>Kejora HQ</h2>
+          <h1>Kejora HQ</h1>
           <p>Wisma Barito Pacific, Tower A Level 1<br>Jl. Letjen S. Parman Kav. 62-63<br>Jakarta 11410 - Indonesia</p>
           <p>+62 21 5366 0543</p>
         </div>
@@ -213,7 +213,7 @@
   </section>
 
   <!-- Join as Participant -->
-  <section class="join block" id="join">
+  <section class="join" id="join">
     <div class="container">
       <div class="row">
         <h1>Daftar di Code For The Kingdom Jakarta</h1>
@@ -225,7 +225,7 @@
   </section>
 
   <!-- Awards -->
-  <div class="awards block">
+  <section class="awards">
     <div class="container">
       <div class="row">
         <h1>Awards</h1>
@@ -247,7 +247,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- <div class="winners block">
     <div class="container">
@@ -309,6 +309,7 @@
   <!-- Mentors -->
   <section class="mentor">
     <div class="container">
+      <div class="row">
         <h1>Mentors</h1>
         <script id="template-mentor">
           {{foreach mentor in people.mentors2016}}
@@ -323,6 +324,7 @@
             </div>
           {{end}}
         </script>
+      </div>
     </div>
   </section>
 
@@ -460,10 +462,31 @@
     </div>
   </section>
 
-  <div class="api block">
+  <!-- FAQs -->
+  <section class="faq">
+    <div class="container">
+      <div class="row">
+        <h1>Frequently Asked Questions</h1> 
+        <!-- Start FAQ Item -->
+        <script id="template-faq">
+        {{foreach question in faq2016id}}
+        <div class="item">
+          <div class="question">
+            <h4>{{question.desc}}</h4>
+            <p>{{question.answer}}</p>
+          </div>
+        </div>
+        {{end}}
+        </script>
+        <!-- End FAQ Item -->
+      </div>
+    </div>
+  </section>
+
+  <!-- APIs -->
+  <!-- <div class="api block">
     <div class="container">
       <h1>Partner APIs</h1>
-      <!-- Start Templated API Item -->
       <script id="template-api">
       {{foreach provider in apis}}
         <div class="col-xs-12 col-sm-6 col-md-3">
@@ -493,9 +516,8 @@
         </div>
       {{end}}
       </script>
-      <!-- End Templated API Item -->
     </div>
-  </div>
+  </div> -->
 
   <!-- Rules -->
   <!-- <div class="rules block">
@@ -511,27 +533,6 @@
       </ol>
     </div>
   </div> -->
-
-  <!-- FAQs -->
-  <section class="faq">
-    <div class="container">
-      <h2>Frequently Asked Questions</h2> 
-      <div class="row">
-        <!-- Start FAQ Item -->
-        <script id="template-faq">
-        {{foreach question in faq2016id}}
-        <div class="item">
-          <div class="question">
-            <h4>{{question.desc}}</h4>
-            <p>{{question.answer}}</p>
-          </div>
-        </div>
-        {{end}}
-        </script>
-        <!-- End FAQ Item -->
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <div class="footer">
