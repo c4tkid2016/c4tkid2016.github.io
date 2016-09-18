@@ -1,4 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('Avenir-Book.ttf');
+}
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('Avenir-Medium.ttf');
+}
 
 /*BANNER from C4TK */
 @-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -11,24 +19,24 @@
 General
 ========================================================================== */
 
-h1, h2, h3, h4, h5, h6, p, b, i, li, td, a {
-  font-family: 'Lato', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir-Medium' !important;
 }
 
-h1 {
-  font-size: 32px;
+p, b, i, li, td, a {
+  font-family: 'Avenir-Book' !important;
 }
 
-.block {
-  padding-top: 40px;
-  padding-bottom: 40px;
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.container h1,
-.container h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
+h1 {font-size: 2.2em !important;margin:0 0 30px 0 !important;}
+h2 {font-size: 2.0em !important;}
+h3 {font-size: 1.8em !important;}
+h4 {font-size: 1.3em !important;}
+p, li {font-size: 1.2em !important;}
 
 .button {
   display: inline-block;
@@ -36,24 +44,25 @@ h1 {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: .2em;
-  padding: 10px;
-  margin-top: 30px;
+  padding: 10px 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 45px !important;
 }
 
-.button-black {
-  color: black;
-  border: 2px solid black;
+.button-blue {
+  color: #132147 !important;
+  border: 2px solid #132147 !important;
 }
 
-.button-white {
-  color: white;
-  border: 2px solid white;
+.button-yellow {
+  color: #F8A419 !important;
+  border: 2px solid #F8A419 !important;
 }
 
-  .button:hover {
-    background-color: white;
-    color: black;
+  .button-blue:hover {
+    background-color: #132147;
+    color: #F8A419 !important;
     text-decoration: none;
     -webkit-transition: 500ms ease;
     -moz-transition: 500ms ease;
@@ -61,190 +70,270 @@ h1 {
     transition: 500ms ease;
   }
 
+  .button-yellow:hover {
+    background-color: #F8A419;
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -o-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+
+.btn-group-xl>.btn, .btn-xl {
+  padding: 15px 24px !important;
+  font-size: 24px !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .button {
+    border-radius: 45px !important;
+  }
+
+  h1 {font-size: 1.8em !important;}
+  h2 {font-size: 1.5em !important;}
+  h3 {font-size: 1.3em !important;}
+  h4 {font-size: 1.1em !important;}
+  p, li {font-size: 1.1em !important;}
+}
+
 /* ==========================================================================
 Banner
 ========================================================================== */
 
 #banner {
-  color: #7c8081;
-  font-family: sans-serif;
-  font-size: 15pt;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-  line-height: 1.75em;
+  background-image: url("img/images-2016/bg-blue.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 250px, 250px, auto, cover;
+  color: white;
+  text-align: center;
+}
 
-  background-attachment: scroll, scroll, scroll, fixed;
-  background-color: #645862;
-  background-image: url("img/light-bl.svg"), url("img/light-br.svg"), url("img/overlay.png"), url("img/slide-bg.jpg");
-  background-position: bottom left, bottom right, top left, top center;
-  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-  background-size: 25em, 25em, auto, cover;
+  #banner .logo {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+    #banner .logo img {
+      width: 30%;
+    }
+
+  #banner .disrupt {
+    margin-bottom: 30px;
+  }
+
+    #banner .disrupt img {
+      width: 50%;
+    }
+
+@media only screen and (max-width: 767px) {
+  #banner {
+    background-size: 150px, 150px, auto, cover;
+  }
+
+    #banner .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+      #banner .logo img {
+        width: 50%;
+      }
+
+      #banner .disrupt img {
+        width: 90%;
+      }
+}
+
+/* ==========================================================================
+Verse
+========================================================================== */
+
+#verse {
+  background-image: url("img/images-2016/bg-verse.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
   color: white;
   cursor: default;
   text-align: center;
 }
 
-  #banner .inner {
-    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-    -o-animation: reveal-banner 1s 0.25s ease-in-out;
-    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-    animation: reveal-banner 1s 0.25s ease-in-out;
-    -moz-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    -ms-animation-fill-mode: forwards;
-    background: rgba(52, 27, 43, 0.5);
-    color: white;
-    display: inline-block;
-    opacity: 0;
-    padding: 1em;
-    text-align: center;
+@media only screen and (max-width: 767px) {
+  #verse {
+    height: 250px;
+    padding-bottom: 0;
   }
 
-    #banner .inner header {
-      display: inline-block;
-      border-bottom: solid 2px;
-      border-top: solid 2px;
-      margin: 0 0 2em 0;
-      padding: 3px 0 3px 0;
+    #verse h3 {
+      font-size: 1.1em;
+      line-height: 1.5em;
     }
 
-      #banner .inner header h2 {
-        border-bottom: solid 2px;
-        border-top: solid 2px;
-        font-size: 1.3em;
-        line-height: 1.75em;
-        font-weight: 900;
-        letter-spacing: 0.2em;
-        margin: 0;
-        padding-left: 0.05em;
-        position: relative;
-        text-transform: uppercase;
-      }
-
-    #banner .inner p {
+    #verse h4 {
       font-size: 0.9em;
-      letter-spacing: 0.1em;
-      margin: 0;
-      text-transform: uppercase;
     }
-
-      #banner .inner p a {
-        color: inherit;
-        font-weight: 400;
-        text-decoration: none;
-      }
-
-    #banner .inner footer {
-      margin: 2em 0 0 0;
-    }
+}
 
 /* ==========================================================================
 About
 ========================================================================== */
 
 .about {
-  background-color: #eaeaea;
+  background-image: url("img/images-2016/bg-white.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 250px, 250px, auto, cover;
   text-align: center;
-  padding: 50px 0;
+  color: #464646;
 }
 
-  .about h1 {
-    color: #464646;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-  }
-
-  .about h1 div {
-    display: inline-block;
-  }
-
   .about p {
-    color: #7c8081;
-    padding-top: 30px;
-    max-width: 800px;
+    color: #464646;
     line-height: 1.5em;
-    font-size: 18px;
-    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.3em;
   }
+
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@media only screen and (max-width: 767px) {
+  .about {
+    background-size: 150px, 150px, auto, cover;
+  }
+}
 
 /* ==========================================================================
 What Is
 ========================================================================== */
 
 .what-is {
-  background-color: #ffffff;
-  padding: 50px 0;
+  background-color: #132147;
   text-align: center;
+  color: #FFFFFF;
 }
 
   .what-is h1 {
-    margin: 0 auto;
-  }
-
-  .what-is h1 div {
-    display: inline-block;
+    color: #F9A519;
+    margin-bottom: 20px;
   }
 
   .what-is p {
-    padding-top: 30px;
     line-height: 1.5em;
-    font-size: 18px;
     text-align: left;
+    font-size: 1.3em;
+  }
+
+  .what-is a {
+    color: #F9A519;
+    text-decoration: underline;
   }
 
   .what-is ul li {
-    font-size: 18px;
+    font-size: 1.3em;
     text-align: left;
-    padding-top: 5px;
+    color: #FFFFFF;
   }
+
+@media only screen and (max-width: 767px) {
+  .what-is ul {
+    padding-left: 20px;
+  }
+}
 
 /* ==========================================================================
-Map & Schedule
+Map
 ========================================================================== */
 
-.schedule {
-  background-color: #eaeaea;
-}
-  
-  .schedule h1,
-  .schedule h3 {
-    text-align: center;
-  }
-
-  .schedule h3 {
-    margin-bottom: 15px;
-  }
-
-  .schedule .maps {
-  background-color: #bbb;
-  height: 400px;
-}
-
-  .schedule .maps iframe {
-    pointer-events: none;
-  }
-
-th {
-  background-color: #555;
+.map {
+  background-image: url("img/images-2016/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
   color: white;
-  padding-left: 20px !important;
+  cursor: default;
+  text-align: left;
+  position: relative;
 }
 
-td {
-  background-color: #fff;
-  padding-left: 20px !important;
-  font-size: 1.2em;
-  border-bottom: 1px solid #ddd;
+  .map iframe {
+    pointer-events: none;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+
+  .map p {
+    font-size: 1.3em;
+  }
+
+@media only screen and (max-width: 767px) {
+  .map {
+    height: 430px;
+  }
+
+    .map iframe {
+      height: 200px;
+    }
 }
+
+/* ==========================================================================
+Schedule
+========================================================================== */
+
+#schedule .nav-tabs li {
+  cursor: pointer;
+}
+
+  #schedule .nav-tabs li a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #schedule td {
+    padding: 10px !important;
+  }
 
 /* ==========================================================================
 Join
 ========================================================================== */
 
 .join {
-  padding-bottom: 0;
+  background-color: #E1E1E1;
+  text-align: center;
+}
+
+.join iframe {
+  height: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+  .join iframe {
+    height: 700px;
+  }
 }
 
 /* ==========================================================================
@@ -252,28 +341,226 @@ Awards
 ========================================================================== */
 
 .awards {
-  background-color: #eaeaea;
+  background-image: url("img/images-2016/bg-awards.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  color: white;
+  cursor: default;
+  text-align: left;
+  position: relative;
 }
 
-  .awards h1 {
+  .awards div {
     text-align: center;
-    margin-bottom: 50px;
   }
 
-  .awards i {
-    text-align: center;
-    font-size: 7em;
-    display: block;
-    color: #D4AF37;
+  .awards div img {
+    width: 40%;
   }
 
-  .awards p {
+  .awards div p {
     text-align: center;
     display: block;
     margin: 20px 0;
-    font-size: 1.5em;
   }
 
+@media only screen and (max-width: 767px) {
+  .awards {
+    height: 450px;
+  }
+}
+
+/* ==========================================================================
+Mentors & Judges & Organizers
+========================================================================== */
+
+.mentors {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.organizers {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.mentor,
+.judge,
+.organizer {
+  display: block;
+  text-align: center;
+}
+
+  .mentor .picture,
+  .judge .picture,
+  .organizer .picture {
+    display: inline-block;
+    width: 90%;
+    padding-bottom: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mentor .desc,
+  .judge .desc,
+  .organizer .desc {
+    background-color: #fff;
+    padding: 10px;
+    height: 130px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .mentor .desc h3,
+  .judge .desc h3,
+  .organizer .desc h3 {
+    color: #F8A419;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+@media only screen and (max-width: 767px) {
+  .mentor,
+  .judge,
+  .organizer {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .mentor .picture,
+  .judge .picture,
+  .organizer .picture {
+    width: 30%;
+    height: 90px;
+    padding: 0;
+  }
+
+  .mentor .desc,
+  .judge .desc,
+  .organizer .desc {
+    background-color: #fff;
+    padding: 5px;
+    height: 90px;
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .mentor .desc h3,
+  .judge .desc h3,
+  .organizer .desc h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+
+  .mentor .desc p,
+  .judge .desc p,
+  .organizer .desc p {
+    word-wrap: break-word;
+  }
+}
+
+/* ==========================================================================
+Join As Sponsor
+========================================================================== */
+
+.join-sponsor {
+  background-color: #EAEAEA;
+  text-align: center;
+}
+
+/* ==========================================================================
+Sponsors & Partners
+========================================================================== */
+
+.sponsors {
+  padding-bottom: 20px;
+}
+
+.partners {
+  padding-top: 20px;
+}
+
+.sponsors,
+.partners {
+  text-align: center;
+}
+
+.sponsor,
+.partner {
+  width: 100%;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center ;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .sponsors {
+    padding-bottom: 10px;
+  }
+
+  .partners {
+    padding-top: 10px;
+  }
+}
+
+/* ==========================================================================
+FAQ
+========================================================================== */
+
+.faq {
+  background-image: url("img/images-2016/bg-faq.jpg");
+  background-position: top-left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+
+.faq .row {
+   -moz-column-width: 30em;
+   -webkit-column-width: 30em;
+   -moz-column-gap: 1em;
+   -webkit-column-gap:1em;
+}
+
+.item {
+  display: inline-block;
+  padding: .25rem;
+  width: 100%;
+}
+
+.question {
+  position: relative;
+  display: block;
+  padding: 0 20px;
+  text-align: left;
+}
+
+  .question h4 {
+    color: #F8A419;
+    padding-bottom: 10px;
+  }
+
+  .question p {
+    padding-bottom: 20px;
+  }
+
+@media only screen and (max-width: 767px) {
+  .question h4, .question p {
+    padding-bottom: 0;
+  }
+}
 
 /* ==========================================================================
 Winners
@@ -286,24 +573,6 @@ Winners
   text-align: center;
   padding-bottom: 20px;
 }
-
-/* ==========================================================================
-Sponsors & Partners
-========================================================================== */
-
-
-
-  .sponsor,
-  .partner {
-    /*display: none; /* Hide for now */
-    
-    width: 100%;
-    height: 120px;
-    background-size: inherit;
-    background-repeat: no-repeat;
-    background-position: center ;
-    margin-bottom: 20px;
-  }
 
 /* ==========================================================================
 Challenges
@@ -331,58 +600,6 @@ Challenges
 .pitch div div{ /* i should refactor this */
   color: #888;
 }
-
-/* ==========================================================================
-Mentors & Judges
-========================================================================== */
-
-.mentor,
-.judge,
-.organizer {
-  display: flex;
-}
-
-.mentor .picture,
-.judge .picture,
-.organizer .picture {
-  display: inline-block;
-  width: 100px;
-  min-width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center ;
-}
-
-.mentor .desc,
-.judge .desc,
-.organizer .desc {
-  background-color: #fff;
-  padding: 10px;
-  height: 100px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-
-.mentor .desc h3,
-.judge .desc h3,
-.organizer .desc h3 {
-  font-size: 1.5em;
-  line-height: 1.1em;
-}
-
-/* ==========================================================================
-Join As Sponsor
-========================================================================== */
-
-.join-sponsor {
-  background-color: #eaeaea;
-}
-
-  .join-sponsor h1 {
-    text-align: center;
-  }
 
 /* ==========================================================================
 API
@@ -433,44 +650,7 @@ API
 }
 
 /* ==========================================================================
-Others
-========================================================================== */
-
-.mentor,
-.judge,
-.organizer,
-.provider,
-.category {
-  /* cursor: pointer; */ /* No need for cursor */
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12)
-}
-
-.mentor .desc h3,
-.judge .desc h3,
-.organizer .desc h3,
-.details h3 {
-  color: #F84E30;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.video {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* ==========================================================================
-FAQ
+Rules
 ========================================================================== */
 
 .rules {
@@ -479,55 +659,18 @@ FAQ
 }
 
 /* ==========================================================================
-FAQ
-========================================================================== */
-
-.faq {
-  background: url("img/coder.jpg") no-repeat 50% 0 fixed;
-  background-size: cover;
-  color: white;
-}
-
-
-.faq .row {
-   -moz-column-width: 30em;
-   -webkit-column-width: 30em;
-   -moz-column-gap: 1em;
-   -webkit-column-gap:1em; 
-}
-
-.item {
-  display: inline-block;
-  padding:  .25rem;
-  width:  100%; 
-}
-
-.question {
-  position: relative;
-  display: block;
-  padding: 0 20px;
-}
-
-.question h4 {
-  color: #BF5FFF;
-}
-
-/* ==========================================================================
 Footer
 ========================================================================== */
 
 .footer {
-  background-color: #333;
-  color: white;
-}
-
-.iconrow {
-  text-align: center;
-  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  color: #132147;
+  padding: 20px 0;
 }
 
 .footer p {
   text-align: center;
+  margin: 0;
 }
 
 
@@ -536,18 +679,18 @@ Other Decides
 ========================================================================== */
 
 /* SMARTPHONES PORTRAIT */
-@media only screen and (min-width: 300px) {
-}
+/*@media only screen and (min-width: 300px) {
+}*/
 
 /* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
+/*@media only screen and (min-width: 480px) {
   #banner .inner header h2 {
     font-size: 2.0em;
   }
-}
+}*/
 
 /* TABLETS PORTRAIT */
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .mentor,
   .judge,
   .organizer {
@@ -581,29 +724,26 @@ Other Decides
   #banner .inner p {
       font-size: 1em;
   }
-  
+
   #banner .inner header h2 {
     font-size: 2.5em;
   }
 
   #banner .inner {
-    padding: 3em;
+    padding: 1em;
   }
-}
+}*/
 
 /* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 
   #banner {
     padding: 3em 0 2.5em 0;
-    /*padding-top: 6em;*/
-
   }
   #banner .inner {
     margin-bottom: 2.5em;
   }
-
-}   
+}   */
 
 /* ==========================================================================
 Archive
