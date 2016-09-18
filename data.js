@@ -284,6 +284,12 @@ var data = {
         name: "Thomas Budiman",
         title: "Head of Product Design of Bukalapak",
         desc: "<p></p>"
+      }, {
+        id: "men19",
+        img: "img/mentors-2016/renny-yosinta.jpg",
+        name: "Renny Yosinta",
+        title: "Marketing Manager of YesHeIs",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
