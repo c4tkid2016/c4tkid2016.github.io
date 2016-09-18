@@ -341,7 +341,7 @@ Awards
 ========================================================================== */
 
 .awards {
-  background-image: url("img/images-2016/bg-awards.png");
+  background-image: url("img/images-2016/bg-awards.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -517,7 +517,7 @@ FAQ
 ========================================================================== */
 
 .faq {
-  background-image: url("img/images-2016/bg-faq.png");
+  background-image: url("img/images-2016/bg-faq.jpg");
   background-position: top-left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -531,13 +531,13 @@ FAQ
    -moz-column-width: 30em;
    -webkit-column-width: 30em;
    -moz-column-gap: 1em;
-   -webkit-column-gap:1em; 
+   -webkit-column-gap:1em;
 }
 
 .item {
   display: inline-block;
   padding: .25rem;
-  width: 100%; 
+  width: 100%;
 }
 
 .question {
@@ -724,7 +724,7 @@ Other Decides
   #banner .inner p {
       font-size: 1em;
   }
-  
+
   #banner .inner header h2 {
     font-size: 2.5em;
   }

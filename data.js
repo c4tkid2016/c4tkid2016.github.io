@@ -1,4 +1,4 @@
-var data = { 
+var data = {
   apis: [
     {
       id: "api1",
@@ -173,7 +173,7 @@ var data = {
         name: "William Soedewa",
         title: "Worship Leader, IES Central",
         desc: ""
-      }  
+      }
     ],
     mentors2016: [
       {
@@ -311,7 +311,7 @@ var data = {
         name: "Renny Yosinta",
         title: "Marketing Manager of YesHeIs",
         desc: "<p></p>"
-      }  
+      }
     ],
     organizers2016: [
       {
@@ -364,7 +364,7 @@ var data = {
         desc: "<p></p>"
       }
     ],
-    mentors: [ 
+    mentors: [
       {
         id: "osm1",
         img: "img/andy_zain.jpg",
@@ -442,7 +442,7 @@ var data = {
         img: "http://codeforthekingdom.org/assets/images/mentors/aaron.jpg",
         name: "Aaron Ginn",
         title: "Head of Growth, StumbleUpon",
-        desc: "<p>Currently the Head of Growth at Stumbleupon, Aaron is an expert on growth and has a passion for public policy issues and philosophy. He applies his personal and professional study of people and metaphysics to marketing, product, and entrepreneurship. His approach to markeitng is product driven, data inspired, and cross-disciplinary (pulling in his experience with philosophy and behavioral economics).He helped grow the Romney Campaign to the millions and StumbledUpon's users to the tens of millions. He hopes to bring the same success in growth and engagement from the startup and technology community to political arena with LincolnLabs.</p>" 
+        desc: "<p>Currently the Head of Growth at Stumbleupon, Aaron is an expert on growth and has a passion for public policy issues and philosophy. He applies his personal and professional study of people and metaphysics to marketing, product, and entrepreneurship. His approach to markeitng is product driven, data inspired, and cross-disciplinary (pulling in his experience with philosophy and behavioral economics).He helped grow the Romney Campaign to the millions and StumbledUpon's users to the tens of millions. He hopes to bring the same success in growth and engagement from the startup and technology community to political arena with LincolnLabs.</p>"
       }, {
         id: "vm2",
         img: "http://codeforthekingdom.org/assets/images/mentors/alain.jpg",
@@ -538,7 +538,7 @@ var data = {
         img: "http://codeforthekingdom.org/assets/images/mentors/dusty_gulleson.jpg",
         name: "Dusty Gulleson",
         title: "Founder, ORA, eResources",
-        desc: "<p>Dusty Gulleson is Chief Executive Officer and has built eResources from a one-man web consulting firm into a thriving competitor in the Content Management, Online Application Management, and custom applications market. In addition to managing the growth and strategic vision of eResources, Gulleson serves as the Chief Software Designer. He is responsible for the design and development of the company's flagship product eResources Content Management System and various SaaS-delivered custom applications, such as the paperless Online Application Manager.In 2012 he formed ORA, a mobile and community building app to introduce a new way to pray. ORA leverages existing social networks and mobile devices to connect individuals in the most meaningful relationship they can have with others and with God. ORA technology creates a personal mobile experience for the individual to invite, connect, share, respond and interact with one another in intercessory prayer. ORA collects, organizes, tracks, reminds, connects and securely shares prayer requests and answers with anyone you choose. ORA does this at a personal and intimate level with your friends and family through the mobile platform or &#39;app&#39; on their smartphone. And ORA does this at the organization level through software that your organizations can use with your existing infrastructure (i.e. - church management software, emailing system, website cms, etc.)</p>" 
+        desc: "<p>Dusty Gulleson is Chief Executive Officer and has built eResources from a one-man web consulting firm into a thriving competitor in the Content Management, Online Application Management, and custom applications market. In addition to managing the growth and strategic vision of eResources, Gulleson serves as the Chief Software Designer. He is responsible for the design and development of the company's flagship product eResources Content Management System and various SaaS-delivered custom applications, such as the paperless Online Application Manager.In 2012 he formed ORA, a mobile and community building app to introduce a new way to pray. ORA leverages existing social networks and mobile devices to connect individuals in the most meaningful relationship they can have with others and with God. ORA technology creates a personal mobile experience for the individual to invite, connect, share, respond and interact with one another in intercessory prayer. ORA collects, organizes, tracks, reminds, connects and securely shares prayer requests and answers with anyone you choose. ORA does this at a personal and intimate level with your friends and family through the mobile platform or &#39;app&#39; on their smartphone. And ORA does this at the organization level through software that your organizations can use with your existing infrastructure (i.e. - church management software, emailing system, website cms, etc.)</p>"
       }, {
         id: "vm18",
         img: "http://codeforthekingdom.org/assets/images/mentors/Jason-Illian.jpg",
@@ -580,7 +580,7 @@ var data = {
         img: "http://codeforthekingdom.org/assets/images/mentors/Kathy.jpg",
         name: "Kathy Cannon",
         title: "Senior Pastor, Crossroads Christian Center",
-        desc: "<p>Kathy finds the most joy in sharing the story of Jesus and watching people operate in their giftings. Through authentic humor and relevant teaching, she loves working with groups and especially church planters. Her life goals are to be an amazing disciple, wife to Ben, mom, friend, follower &amp; leader. After serving for eight years as an executive pastor of ministry &amp; and development, she is now the lead pastor to an awesome core of families who are re-planting a historic church in the Bay Area.The Cannons have been married for 12 years and became parents through the &quot;zero to chaos&quot; method of adoption. Five uh-mazing kids later, they&#39;re busy and often sleep-deprived, but convinced the fantastic 5 are going to make the best grown-ups the world has ever seen.</p>" 
+        desc: "<p>Kathy finds the most joy in sharing the story of Jesus and watching people operate in their giftings. Through authentic humor and relevant teaching, she loves working with groups and especially church planters. Her life goals are to be an amazing disciple, wife to Ben, mom, friend, follower &amp; leader. After serving for eight years as an executive pastor of ministry &amp; and development, she is now the lead pastor to an awesome core of families who are re-planting a historic church in the Bay Area.The Cannons have been married for 12 years and became parents through the &quot;zero to chaos&quot; method of adoption. Five uh-mazing kids later, they&#39;re busy and often sleep-deprived, but convinced the fantastic 5 are going to make the best grown-ups the world has ever seen.</p>"
       }, {
         id: "vm25",
         img: "http://codeforthekingdom.org/assets/images/mentors/ken.jpg",
@@ -793,9 +793,3 @@ var data = {
     }
   ]
 };
-
-
-
-
-
-
