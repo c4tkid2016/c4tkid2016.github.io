@@ -290,6 +290,18 @@ var data = {
         name: "Renny Yosinta",
         title: "Marketing Manager of YesHeIs",
         desc: "<p></p>"
+      }, {
+        id: "men20",
+        img: "img/mentors-2016/dian-kurniadi.jpg",
+        name: "Dian Kurniadi",
+        title: "COO of JAS Kapital",
+        desc: "<p></p>"
+      }, {
+        id: "men21",
+        img: "img/mentors-2016/william-eka.jpg",
+        name: "William Eka",
+        title: "Associate Director of Skystar Capital",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
