@@ -298,36 +298,48 @@ var data = {
         desc: "<p></p>"
       }, {
         id: "men21",
-        img: "img/mentors-2016/william-eka.jpg",
-        name: "William Eka",
-        title: "Associate Director of Skystar Capital",
+        img: "img/mentors-2016/josua-wahyudi.jpg",
+        name: "Josua Wahyudi",
+        title: "Master Trainer at Shifthink Human",
+        desc: "<p></p>"
+      }, {
+        id: "men22",
+        img: "img/mentors-2016/doni-priliandi.jpg",
+        name: "Doni Priliandi",
+        title: "Founder of Happy5",
         desc: "<p></p>"
       }
     ],
     judges2016: [
       {
         id: "jdg1",
-        img: "img/judges-2016/ronald-ishak.jpg",
-        name: "Ronald Ishak",
-        title: "Partner of RMKB Ventures",
+        img: "img/judges-2016/sidney-mohede.jpg",
+        name: "Sidney Mohede",
+        title: "Jakarta Praise Community Church",
         desc: "<p></p>"
       }, {
         id: "jdg2",
-        img: "img/judges-2016/william-eka.jpg",
+        img: "img/judges-2016/George Hendrata.jpg",
         name: "William Eka",
-        title: "Associate Director of Skystar Capital",
+        title: "Endeavor Indonesia & Djarum Group",
         desc: "<p></p>"
       }, {
         id: "jdg3",
+        img: "img/judges-2016/wendy-phodi.jpg",
+        name: "Wendy Phodi",
+        title: "YesHeIs & CV Global",
+        desc: "<p></p>"
+      }, {
+        id: "jdg4",
         img: "img/judges-2016/john-drexler.jpg",
         name: "John Drexler",
         title: "Associate of Sovereign's Capital",
         desc: "<p></p>"
       }, {
-        id: "jdg4",
-        img: "img/judges-2016/renny-yosinta.jpg",
-        name: "Renny Yosinta",
-        title: "Marketing Manager of YesHeIs",
+        id: "jdg5",
+        img: "img/judges-2016/william-eka.jpg",
+        name: "William Eka",
+        title: "Associate of Skystar Capital",
         desc: "<p></p>"
       }
     ],
