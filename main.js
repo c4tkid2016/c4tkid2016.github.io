@@ -10,8 +10,8 @@ console.log('Hello Hacker! If you\'re reading this, you should join us!')
 var templateMentor = Tangular.compile(document.getElementById('template-mentors').innerHTML);
 $( ".mentors .container" ).append(templateMentor(data));
 
-// var templateJudge = Tangular.compile(document.getElementById('template-judge').innerHTML);
-// $( ".judge .container" ).append(templateJudge(data));
+var templateJudge = Tangular.compile(document.getElementById('template-judges').innerHTML);
+$( ".judges .container" ).append(templateJudge(data));
 
 var templateOrganizer = Tangular.compile(document.getElementById('template-organizers').innerHTML);
 $( ".organizers .container" ).append(templateOrganizer(data));
@@ -34,5 +34,5 @@ $('.maps').click(function () {
 });
 
 $('.maps').mouseleave(function() {
-  $('.maps iframe').css('pointer-events', 'none'); 
+  $('.maps iframe').css('pointer-events', 'none');
 });

@@ -333,42 +333,44 @@
   </section>
 
   <!-- Judges -->
-  <!-- <div class="judge block">
+  <section class="judges">
     <div class="container">
-    <h1>Judges</h1>
-      <script id="template-judge">
-      {{foreach judge in people.judges2016}}
-      <div class="col-xs-12 col-sm-4 col-md-3">
-        <div class="judge" data-toggle="modal" data-target="#{{judge.id}}">
-          <div class="picture" style="background-image: url('{{judge.img}}')">
-          </div>
-          <div class="desc">
-            <h3>{{judge.name}}</h3>
-            <p>{{judge.title}}</p>
+      <div class="row">
+        <h1>Judges</h1>
+        <script id="template-judges">
+        {{foreach judge in people.judges2016}}
+        <div class="col-xs-12 col-sm-4 col-md-3">
+          <div class="judge" data-toggle="modal" data-target="#{{judge.id}}">
+            <div class="picture img-circle" style="background-image: url('{{judge.img}}')">
+            </div>
+            <div class="desc">
+              <h3>{{judge.name}}</h3>
+              <p>{{judge.title}}</p>
+            </div>
           </div>
         </div>
-      </div>
-      {{end}}
-      </script>
+        {{end}}
+        </script>
 
-      <div class="modal" id="{{judge.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">{{judge.name}}</h4>
-              <span>{{judge.title}}</span>
-            </div>
-            <div class="modal-body">
-              {{ judge.desc | raw }}
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <div class="modal" id="{{judge.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">{{judge.name}}</h4>
+                <span>{{judge.title}}</span>
+              </div>
+              <div class="modal-body">
+                {{ judge.desc | raw }}
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-  </div> -->
+  </section>
 
   <!-- Organizers -->
   <section class="organizers">

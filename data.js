@@ -319,8 +319,8 @@ var data = {
         desc: "<p></p>"
       }, {
         id: "jdg2",
-        img: "img/judges-2016/George Hendrata.jpg",
-        name: "William Eka",
+        img: "img/judges-2016/george-hendrata.jpg",
+        name: "George Hendrata",
         title: "Endeavor Indonesia & Djarum Group",
         desc: "<p></p>"
       }, {
@@ -339,7 +339,7 @@ var data = {
         id: "jdg5",
         img: "img/judges-2016/william-eka.jpg",
         name: "William Eka",
-        title: "Associate of Skystar Capital",
+        title: "Associate Director of Skystar Capital",
         desc: "<p></p>"
       }
     ],

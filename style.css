@@ -376,12 +376,9 @@ Awards
 Mentors & Judges & Organizers
 ========================================================================== */
 
-.mentors {
-  text-align: center;
-  padding-bottom: 0;
-}
-
-.organizers {
+.mentors,
+.organizers,
+.judges {
   text-align: center;
   padding-bottom: 0;
 }
