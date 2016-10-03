@@ -53,9 +53,6 @@ var data = {
       desc: "Apakah ada tempat untuk mandi di venue?",
       answer: "Tidak ada."
     }, {
-      desc: "Apakah saya akan bertemu dengan anggota tim lainnya sebelum event?",
-      answer: "Mungkin. Anda dapat menggunakan platform Indigitous untuk bertemu dengan partisipan lainnya, mengusulkan ide, dan merekrut ataupun direkrut dalam sebuah tim. Anda dapat mengajak tim untuk berpartisipasi di C4TK atau bergabung dengan tim lainnya di hackathon."
-    }, {
       desc: "Dapatkah saya mempresentasikan teknologi yang sudah saya siapkan sebelumnya?",
       answer: "Anda perlu mengerjakan beberapa coding baru selama acara hackathon atau menambah fitur di atas teknologi yang sudah ada sebelumnya."
     }, {
