@@ -308,6 +308,18 @@ var data = {
         name: "Doni Priliandi",
         title: "Founder of Happy5",
         desc: "<p></p>"
+      }, {
+        id: "men23",
+        img: "img/mentors-2016/fess-montezuma.jpg",
+        name: "Fess Montezuma",
+        title: "Pastor of GBI",
+        desc: "<p></p>"
+      }, {
+        id: "men24",
+        img: "img/mentors-2016/tiro-daenuwy.jpg",
+        name: "Frater Tiro A. Daenuwy SJ",
+        title: "Jesuit Scholastic",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
