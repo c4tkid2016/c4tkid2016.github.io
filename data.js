@@ -755,6 +755,11 @@ var data = {
       name: "Hacktiv8",
       img: "img/sponsors-2016/sponsor_hacktiv8.jpg",
       url: "http://hacktiv8.com/"
+    },
+    {
+      name: "Insight Unlimited",
+      img: "img/sponsors-2016/sponsor_insight.jpg",
+      url: "http://www.insight-unlimited.com/"
     }
   ],
   partners2016: [
