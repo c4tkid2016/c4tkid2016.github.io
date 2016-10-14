@@ -317,6 +317,12 @@ var data = {
         name: "Frater Tiro A. Daenuwy SJ",
         title: "Jesuit Scholastic",
         desc: "<p></p>"
+      }, {
+        id: "men25",
+        img: "img/mentors-2016/kevin-sutantyo.jpg",
+        name: "Kevin Sutantyo",
+        title: "Venture Partner of Sovereign's Capital",
+        desc: "<p></p>"
       }
     ],
     judges2016: [
